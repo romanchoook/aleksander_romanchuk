@@ -108,17 +108,22 @@ print(result)
 #5. Поиск максимального числа
 num = 1
 res_sum = []
+result = "Не было введено ни одного числа"
 while num != 0:
-   num = input("Введите целое число или 0 для выхода: ")
-   if num == "":
-       result = ("Введено пустое значение")
-       break
-   num = int(num)
-   if num != 0:
-       res_sum.append(num)
-       result = max(res_sum)
-   else:
-       continue
+    num = input("Введите целое число или 0 для выхода: ")
+    if num == "":
+        result = "Введено пустое значение"
+        break
+    num = int(num)
+    if num != 0:
+        res_sum.append(num)
+        result = f"Максимальное введенное число: {max(res_sum)}"
+    else:
+        if res_sum:
+            result = f"Максимальное введенное число: {max(res_sum)}"
+        else:
+            result = "Не было введено ни одного числа"
+        break
 print(result)
 
 #1. Вывести все символы строки в обратном порядке

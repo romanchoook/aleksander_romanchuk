@@ -66,8 +66,9 @@ print(text_9_2.strip())
 
 print("Задание_10: ")
 text = "программирование"
-text = text.replace("п", "П")
-
-print(text.find("р"))
+text = text.capitalize()
+print(text)
+print(text.count("р"))
 print(text.index("и"))
-print(text[::-1])
+res = text[::-1]
+print(res)

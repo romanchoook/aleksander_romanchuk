@@ -49,5 +49,5 @@ print(spisok_1)
 #5
 result = []
 obj = [17, 'строка', [1, 2, 3]]
-is_iter = [True if type(i) == list or type(i) == str else False for i in obj]
+is_iter = [hasattr(i, '__iter__') for i in obj]
 print(is_iter)

@@ -56,19 +56,18 @@ else:
 
 #8. Оператор in для проверки пароля
 password = input("Введите пароль: ")
-if password == "admin123":
+"""if password == "admin123":
     print("Доступ разрешен")
 else:
-    print("Доступ запрещен")
-"""задание называется "оператор in" - в данном задании он бы проверил вхождение строки admin123 в строку
+    print("Доступ запрещен") - задание называется "оператор in" - в данном задании он бы проверил вхождение строки admin123 в строку
 password("Если пароль "admin123", выведи "Доступ разрешен"), но не проверил бы полное вхождение данной строки в password
 (по заданию четко указано, что password == "admin123").
-если нужна проверка наличия в пароле строки admin123, то:
+если нужна проверка наличия в пароле строки admin123, то:"""
 if "admin123" in password:
     print("Доступ разрешен")
 else:
     print("Доступ запрещен")
-    """
+
 
 #9. Калькулятор скидки
 amount = float(input("Введите сумму покупки: "))
@@ -187,5 +186,5 @@ print(access)
 
 ##5. Определение скидки в магазине
 summa_pokupki = float(input("Введите сумму покупки: "))
-itogo = summa_pokupki * 0.9 if summa_pokupki >= 5000 else summa_pokupki
+itogo = summa_pokupki * 0.9 if summa_pokupki > 5000 else summa_pokupki
 print(itogo)

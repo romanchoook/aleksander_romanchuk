@@ -64,7 +64,8 @@ f = open(data, encoding="utf-8")
 five_symbols = f.read(5)
 print(five_symbols)
 f.seek(0)
-print(five_symbols)
+new_five_symbols = f.read(5)
+print(new_five_symbols)
 f.close()
 
 print(8*"=")
@@ -101,14 +102,18 @@ print(8*"=")
 
 """10. Модифицируйте программу из Задания 1, добавив гарантированное закрытие файла в блоке finally."""
 
+f = None  # Инициализируем переменную до блока try
 try:
     f = open(data, encoding="utf-8")
-    try:
-        print(f.read())
-    finally:
-        f.close()
+    print(f.read())
+except FileNotFoundError:
+    print(f"Файл {data} не найден")
+except Exception as e:
+    print(f"Произошла ошибка: {e}")
 finally:
-    f.close()
+    if f is not None:  # Проверяем, был ли файл открыт
+        f.close()
+        print("Файл закрыт")
 
 
 print(8*"=")

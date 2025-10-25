@@ -17,7 +17,6 @@ print("Задание 2:")
 x = 15
 print(x % 2 == 0)
 print(x % 5 == 0)
-print(x % 5 == 0)
 print(x % 3 == 0 and x % 5 == 0)
 
 ###3

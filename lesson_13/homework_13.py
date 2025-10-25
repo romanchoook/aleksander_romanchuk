@@ -88,7 +88,7 @@ def timer(repeat):
                 start = time.time()
                 result = x(*args, **kwargs)
                 end = time.time()
-                total_time = end - start
+                total_time += (end - start)
             average_time = total_time / repeat
             print(f"Среднее время выполнения {average_time} секунд")
             return result

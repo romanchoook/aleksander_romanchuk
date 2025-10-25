@@ -14,11 +14,16 @@ print(s[len(s) - 1])
 ###3
 print("Задание 3:")
 
-t = print(s[: 6])
-m = print(s[-5 :])
-k = print(s[ 2 : 8])
-l = print(s[1::2]) # - каждый второй, значит индекс первого нужного символа = 1
-r = print(s[::-1])
+t = s[:6]
+print(t)
+m = s[-5:]
+print(m)
+k = s[ 2 : 8]
+print(k)
+l = s[1::2]
+print(l) # - каждый второй, значит индекс первого нужного символа = 1
+r = s[::-1]
+print(r)
 
 ###4
 print("Задание 4:")
@@ -36,6 +41,9 @@ s2 = ("П" + s[1:])
 print("Задание 6:")
 
 word = "abcdefgh"
-word[2:5]
-print(word[::-1])
-print(word[1:-1])
+cde = word[2:5]
+print(cde)
+obrat = word[::-1]
+print(obrat)
+bcdefg = word[1:-1]
+print(bcdefg)

@@ -54,7 +54,7 @@ def size_time(func):
         start = time.time()
         func()
         end = time.time()
-        res = {end - start}
+        res = end - start
         print(f"Код выполнялся {res} сек")
         return res
     return wrapper

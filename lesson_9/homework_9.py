@@ -31,7 +31,7 @@ for key, value in students:
     dict_stud[value].append(key)
 print(dict_stud)
 
-5. Создайте словарь, содержащий оценки студентов:
+# 5. Создайте словарь, содержащий оценки студентов:
 grades = {"Анна": 5, "Борис": 4, "Виктор": 1, "Галина": 3, "Дмитрий": 2}
 min_grade = min(grades, key=grades.get)
 remove_stud = grades.pop(min_grade)
@@ -65,7 +65,7 @@ dict1.update(dict2)
 print(dict1)
 
 # 1. Создайте кортеж из пяти элементов (разных типов данных).
-t = (1, 2, 1,434, 64564, 46535, "fw", [6,6,6,3,'sdfsd'])
+t = (1, 2, 1, "fw", [6,6,6,3,'sdfsd'])
 print(t[1])
 print(t[-1])
 

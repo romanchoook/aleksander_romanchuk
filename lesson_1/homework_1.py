@@ -61,3 +61,15 @@ prmnn1 = "переменная3"
 _prmnn2 = "test"
 _prmnn3 = 12
 переменная = 10 #работает
+print(_prmn1)
+print(type(_prmn1))
+print(Prmnn1)
+print(type(Prmnn1))
+print(prmnn1)
+print(type(prmnn1))
+print(_prmnn2)
+print(type(_prmnn2))
+print(_prmnn3)
+print(type(_prmnn3))
+print(переменная)
+print(type(переменная))
